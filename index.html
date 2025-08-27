@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>足立圭透 | ポートフォリオ</title>
+  <meta name="description" content="AI・Webに強いエバンジェリスト 足立圭透（あだち けいと）のポートフォリオ。プロジェクト、経歴、スキル、連絡先。" />
+  <meta property="og:title" content="足立圭透 | ポートフォリオ" />
+  <meta property="og:description" content="AI・Webに強いエバンジェリストのプロジェクトと実績。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.png" />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "足立圭透",
+    "jobTitle": "Evangelist",
+    "url": "https://example.com",
+    "email": "mailto:adachi@alm.ne.jp",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "株式会社ALM"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">Ketio Adachi</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="site-nav" aria-label="主要">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>AI × Webで価値を生むエバンジェリスト</h1>
+      <p>山梨拠点。AIツール紹介とデータ活用が得意です。</p>
+      <div class="cta">
+        <a class="button primary" href="#projects">プロジェクトを見る</a>
+        <a class="button" href="#contact">連絡する</a>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="assets/placeholder-1.webp" alt="プロジェクトAのスクリーンショット" loading="lazy">
+          <div class="card-body">
+            <h3>プロジェクトA — 需要予測ダッシュボード</h3>
+            <p>小売向けの簡易需要予測（LSTM）と可視化を一体化。リードタイム短縮を実現。</p>
+            <ul class="tags">
+              <li>Python</li><li>FastAPI</li><li>Postgres</li><li>Chart.js</li>
+            </ul>
+            <div class="actions">
+              <a href="#">Live</a>
+              <a href="#">Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/placeholder-2.webp" alt="プロジェクトBのスクリーンショット" loading="lazy">
+          <div class="card-body">
+            <h3>プロジェクトB — 採用候補者サーチ</h3>
+            <p>候補者情報をクローリングし、埋め込み検索でスクリーニングを自動化。</p>
+            <ul class="tags">
+              <li>Node.js</li><li>Next.js</li><li>Vector DB</li>
+            </ul>
+            <div class="actions">
+              <a href="#">Live</a>
+              <a href="#">Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/placeholder-3.webp" alt="プロジェクトCのスクリーンショット" loading="lazy">
+          <div class="card-body">
+            <h3>プロジェクトC — KPIモニタリング</h3>
+            <p>アラート閾値の自己学習機能つきKPI監視。Slack通知に対応。</p>
+            <ul class="tags">
+              <li>Python</li><li>Django</li><li>Redis</li>
+            </ul>
+            <div class="actions">
+              <a href="#">Live</a>
+              <a href="#">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li>
+          <time>2023–現在</time>
+          <div><strong>株式会社ALM</strong> — SalesManager/AI議事録とれる君</div>
+        </li>
+        <li>
+          <time>2022–2023</time>
+          <div><strong>ネットスマイル株式会社</strong> — SalesManager/AIスキャンロボ</div>
+        </li>
+　　　　<li>
+          <time>2013–2022</time>
+          <div><strong>株式会社アルソア慧央グループ</strong> — Sales/化粧品・健康食品</div>
+        </li>
+
+      </ul>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="chips">
+        <li>Python</li><li>JavaScript</li><li>FastAPI</li><li>Django</li>
+        <li>React/Next.js</li><li>SQL</li><li>AWS</li><li>GCP</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <label>お名前
+          <input required type="text" name="name" />
+        </label>
+        <label>メール
+          <input required type="email" name="email" />
+        </label>
+        <label>メッセージ
+          <textarea required name="message" rows="5"></textarea>
+        </label>
+        <button class="button primary" type="submit">送信</button>
+      </form>
+      <p class="small">※ 送信ボタンはメールソフトを起動します（サーバー不要）。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Keito Adachi</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
